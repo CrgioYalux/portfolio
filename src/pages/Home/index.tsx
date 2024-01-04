@@ -2,7 +2,7 @@ import Divider from "../../components/Divider";
 import HeaderSection from "./sections/Header";
 import IntroductionSection from "./sections/Introduction";
 import ConsoleSection from "./sections/Console";
-import PersonalProjectsSection from "./sections/PersonalProjects";
+import ProjectsSection from "./sections/Projects";
 
 const Home: React.FC = () => {
     return (
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 			<Divider />
 			<ConsoleSection />
 			<Divider />
-			<PersonalProjectsSection />
+			<ProjectsSection />
 		</div>
     );
 };

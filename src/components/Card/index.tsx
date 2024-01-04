@@ -1,58 +1,13 @@
-import { useState } from 'react';
-import AngleDownIcon from '../Icons/AngleDown';
-import GithubIcon from '../Icons/Github';
-
-interface SkeletonProps {
-    className?: string;
-    title: string;
-    repository: string;
-    deploy: string;
-    children: React.ReactNode;
-    isOpen: boolean;
-    switchOpen: () => void;
-};
-
-const Skeleton: React.FC<SkeletonProps> = ({
-    className = '',
-    title,
-    repository,
-    deploy,
-    children,
-    isOpen,
-    switchOpen,
-}) => {
-    return (
-        <div className='h-full flex flex-col gap-2 bg-primary-300 rounded-lg p-2 md:w-80 text-text text-base'>
-            <div className='flex-none basis-10 flex flex-row gap-4 justify-between items-center'>
-                <div className='flex flex-row gap-2 items-center'>
-                    <a href={repository} target='_blank' className='cursor-pointer'>
-                        <GithubIcon className='h-6 w-6 fill-current' />
-                    </a>
-                    <a href={deploy} target='_blank' className='cursor-pointer text-lg font-bold md:hover:underline'>
-                        <span className='md:whitespace-nowrap'>{title}</span>
-                    </a>
-                </div>
-                <button 
-                onClick={switchOpen}
-                className='border-2 border-current box-content p-1 rounded-full grid place-items-center'
-                >
-                    {<AngleDownIcon className={`h-4 w-4 fill-current pt-0.5 ${isOpen ? 'rotate-180' : 'rotate-0'} transition-transform duration-100`} />}
-                </button>
-            </div>
-            <div className={`grow-0 shrink ${isOpen ? 'basis-full py-2' : 'basis-0'} border-2 border-primary px-2 text-sm text-text font-medium bg-primary rounded-md transition-[padding] duration-100 ${className}`}>
-                 {isOpen ? children : ''}
-            </div>
-        </div>
-    );
-};
+import LinkIcon from "../Icons/Link";
+import GithubIcon from "../Icons/Github";
 
 interface CardProps {
     className?: string;
     title: string;
     repository: string;
     deploy: string;
+    description: string;
     image?: string;
-    description?: string;
 };
 
 const Card: React.FC<CardProps> = ({
@@ -60,25 +15,23 @@ const Card: React.FC<CardProps> = ({
     title,
     repository,
     deploy,
-    description = '',
+    description,
 }) => {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    const switchOpen = (): void => {
-        setIsOpen((prev) => !prev);
-    };
-
     return (
-        <Skeleton 
-        title={title}
-        repository={repository}
-        deploy={deploy}
-        isOpen={isOpen}
-        switchOpen={switchOpen}
-        className={className}
-        >
-            {description}
-        </Skeleton>
+        <div className='flex-auto md:flex-none grid grid-rows-[auto_1fr] text-text-light dark:text-text-dark border-2 border-current'>
+            <div className='flex justify-between items-center gap-4 px-2 py-1 border-b-2 bg-current border-current'>
+                <a href={deploy} target='_blank' className='text-text-dark dark:text-text-light cursor-pointer flex gap-1 items-center'>
+                    <span className='text-base font-medium'>{title}</span>
+                    <LinkIcon className='h-3 w-3 fill-current' />
+                </a>
+                <a href={repository} target='_blank' className='text-text-dark dark:text-text-light cursor-pointer'>
+                    <GithubIcon className='h-6 w-6 fill-current' />
+                </a>
+            </div>
+            <div className={`p-2 text-sm max-h-20 overflow-y-auto ${className}`}>
+                {description}
+            </div>
+        </div>
     );
 };
 
