@@ -85,6 +85,12 @@ const i18n = {
                         repository: 'https://github.com/CrgioYalux/make-a-poll',
                         description: 'An app for making polls and see the results in realtime.',
                     },
+                    {
+                        title: 'Dolce',
+                        deploy: 'https://dolce-theta.vercel.app',
+                        repository: 'https://github.com/CrgioYalux/dolce',
+                        description: 'A layout for an app for a bakery in which customers can create and customize their orders as much as they like',
+                    },
                 ],
                 'spanish': [
                     {
@@ -140,6 +146,12 @@ const i18n = {
                         deploy: 'https://make-a-simple-poll.herokuapp.com',
                         repository: 'https://github.com/CrgioYalux/make-a-poll',
                         description: 'Una app para hacer votaciones y ver los resultados en tiempo real.',
+                    },
+                    {
+                        title: 'Dolce',
+                        deploy: 'https://dolce-theta.vercel.app',
+                        repository: 'https://github.com/CrgioYalux/dolce',
+                        description: 'Una interfaz para una app de una pastelería en la que los clientes arman sus pedidos a gusto',
                     },
                 ],
             },
