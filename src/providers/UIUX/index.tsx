@@ -28,7 +28,7 @@ const UIUXContextProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const value: UIUX.UIUXContextValue = {
         theme: { current: preferences.theme, opposite: preferences.theme === 'dark' ? 'light' : 'dark', },
-        language: { current: preferences.language, opposite: preferences.language === 'english' ? 'light' : 'dark', },
+        language: { current: preferences.language, opposite: preferences.language === 'english' ? 'spanish' : 'english', },
     };
     
     const action: UIUX.UIUXContextAction = {

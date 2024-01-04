@@ -8,18 +8,18 @@ export namespace UIUX {
     };
 
     type Preferences = {
-        theme: Theme;
-        language: Language;
+        theme: Theme.Value;
+        language: Language.Value;
     };
 
     interface UIUXContextValue {
         theme: {
-            current: Theme;
-            opposite: Theme;
+            current: Theme.Value;
+            opposite: Theme.Value;
         };
         language: {
-            current: Value;
-            opposite: Value;
+            current: Language.Value;
+            opposite: Language.Value;
         };
     };
 
