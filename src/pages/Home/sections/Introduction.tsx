@@ -24,6 +24,9 @@ const Introduction: React.FC = () => {
 				<a href="https://github.com/CrgioYalux" target='_blank'>
 					<GithubIcon className='h-8 w-8 fill-current' />
 				</a>
+				<a href={i18n.section.introduction.CV.filename[value.language.current]} download className='font-medium cursor-pointer border-2 border-current rounded-lg py-0.5 px-2'>
+					{i18n.section.introduction.CV.button[value.language.current]}
+				</a>
 			</div>
 		</div>
 	);

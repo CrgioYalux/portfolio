@@ -15,6 +15,16 @@ const i18n = {
                 'spanish': 'Desarrollador altamente motivado por la imaginación, curiosidad y el disfrute por crear',
                 'english': 'Developer highly motivated by imagination, curiosity and enjoyment for making things',
             },
+            CV: {
+                button: {
+                    'spanish': 'Mi CV',
+                    'english': 'My CV',
+                },
+                filename: {
+                    'spanish': '/SergioYalux_CV_Spanish.pdf',
+                    'english': '/SergioYalux_CV_English.pdf',
+                },
+            },
         },
         console: {
             whoami: {
