@@ -166,6 +166,22 @@ const i18n = {
                 ],
             },
         },
+        software: {
+            section: {
+                currentlyUsing: {
+                    'english': 'Currently Using',
+                    'spanish': 'Actualmente Usando',
+                },
+                learning: {
+                    'english': 'Learning',
+                    'spanish': 'Aprendiendo',
+                },
+                planningOnLearningNext: {
+                    'english': 'Planning On Learning Next',
+                    'spanish': 'Siguiente Por Aprender',
+                },
+            },
+        },
     },
 };
 

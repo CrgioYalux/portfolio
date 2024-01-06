@@ -3,6 +3,7 @@ import HeaderSection from "./sections/Header";
 import IntroductionSection from "./sections/Introduction";
 import ConsoleSection from "./sections/Console";
 import ProjectsSection from "./sections/Projects";
+import SoftwareSection from "./sections/Software";
 
 const Home: React.FC = () => {
     return (
@@ -14,6 +15,8 @@ const Home: React.FC = () => {
 			<ConsoleSection />
 			<Divider />
 			<ProjectsSection />
+			<Divider />
+			<SoftwareSection />
 		</div>
     );
 };
