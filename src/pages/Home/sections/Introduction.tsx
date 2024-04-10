@@ -17,15 +17,23 @@ const Introduction: React.FC = () => {
 				</h1>
 				<h3 className='text-lg font-normal text-center md:text-start md:text-xl'>{i18n.section.introduction.subtext[value.language.current]}</h3>
 			</div>
-			<div className='flex flex-row gap-2 items-center justify-center md:justify-start'>
-				<a href="https://www.linkedin.com/in/sergioyalux/" target='_blank'>
-					<LinkedinIcon className='h-8 w-8 fill-current' />
-				</a>
+			<div className='flex flex-row gap-2 px-4 md:p-0 items-center justify-center md:justify-start'>
 				<a href="https://github.com/CrgioYalux" target='_blank'>
 					<GithubIcon className='h-8 w-8 fill-current' />
 				</a>
-				<a href={i18n.section.introduction.CV.filename[value.language.current]} download className='font-medium cursor-pointer border-2 border-current rounded-lg py-0.5 px-2'>
+				<a href="https://www.linkedin.com/in/sergioyalux/" target='_blank'>
+					<LinkedinIcon className='h-8 w-8 fill-current' />
+				</a>
+				<a 
+				href={i18n.section.introduction.CV.filename[value.language.current]}
+				download
+				className='flex-none font-medium cursor-pointer border-2 border-current rounded-lg py-0.5 px-2'>
 					{i18n.section.introduction.CV.button[value.language.current]}
+				</a>
+				<a 
+				href="mailto:sergioyalux1@gmail.com"
+				className='flex-none ml-auto md:m-0 font-medium tracking-wide cursor-pointer bg-primary text-text rounded-lg py-1 px-4'>
+					{i18n.section.introduction.mailto.button[value.language.current]}
 				</a>
 			</div>
 		</div>
