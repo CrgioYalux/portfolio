@@ -9,8 +9,8 @@ const Introduction: React.FC = () => {
 	const [value] = useUIUX();
 
 	return (
-		<div className='w-full flex flex-col gap-6 py-4 px-2 md:px-10'>
-			<div className='flex flex-col gap-3 justify-center items-center md:items-start md:gap-2'>
+		<div className='w-full flex flex-col gap-6 p-4 md:px-24'>
+			<div className='flex flex-col gap-2 justify-center items-center md:items-start'>
 				<h1 className='text-5xl flex flex-row gap-2 md:text-6xl'>
 					<span className='font-medium md:font-light'>Sergio</span> 
 					<span className='font-extrabold'>Yalux</span>

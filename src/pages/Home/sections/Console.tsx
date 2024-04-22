@@ -13,7 +13,7 @@ const Console: React.FC = () => {
 	const whoamiValues = i18n.section.console.whoami.values[value.language.current];
 
 	return (
-		<div className='w-full flex flex-col gap-2 items-start justify-center py-4 px-4 md:px-10 font-medium'>
+		<div className='w-full flex flex-col gap-2 items-start justify-center p-4 md:px-24 font-medium'>
 			<CommandPrompt text='whoami' />
 			<div className='flex flex-col flex-wrap gap-1 md:gap-2 whitespace-nowrap md:flex-row font-normal'>
 				<span>Sergio Yalux</span>

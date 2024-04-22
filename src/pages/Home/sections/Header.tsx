@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 	const [value, action] = useUIUX();
 
 	return (
-		<div className='w-full flex flex-col items-center justify-center text-sm py-2'>
+		<div className='w-full flex flex-col items-center justify-center text-sm py-2 md:px-24'>
 			<div className='flex flex-row gap-1 items-center md:ml-auto'>
 				<SwitchButton
 				onClick={action.theme.switch}
