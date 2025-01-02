@@ -2,12 +2,12 @@
 	margin-left: 0;
 	margin-right: calc(100% - theme(height.4));
 
-	transition: all .15s ease-in-out;
+	transition: all 0.15s ease-in-out;
 }
 
 .SwitchButton > input:checked + div div.SwitchButton__drop {
 	margin-left: calc(0% + theme(height.4));
 	margin-right: 0;
 
-	transition: all .15s ease-in-out;
+	transition: all 0.15s ease-in-out;
 }
