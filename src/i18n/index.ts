@@ -2,20 +2,20 @@ const i18n = {
 	section: {
 		header: {
 			theme: {
-				spanish: { dark: 'oscuro', light: 'claro' },
-				english: { dark: 'dark', light: 'light' },
+				spanish: { dark: 'Oscuro', light: 'Claro' },
+				english: { dark: 'Dark', light: 'Light' },
 			},
 			language: {
-				spanish: { english: 'english', spanish: 'español' },
-				english: { english: 'english', spanish: 'español' },
+				spanish: { english: 'English', spanish: 'Español' },
+				english: { english: 'English', spanish: 'Español' },
 			},
 		},
 		introduction: {
 			subtext: {
 				spanish:
-					'Desarrollador altamente motivado por la curiosidad, la imaginación y el disfrute por crear',
+					'Desarrollador impulsado por la curiosidad, la creatividad y la pasión por crear',
 				english:
-					'Developer highly motivated by curiosity, imagination and enjoyment for making things',
+					'Developer driven by curiosity, creativity, and a passion for creating',
 			},
 			CV: {
 				button: {
@@ -39,15 +39,13 @@ const i18n = {
 				values: {
 					spanish: [
 						'Desarrollo Web',
-						'Él/él',
-						'23 años',
+						'24 años',
 						'Tecnicatura Universitaria en Programación (UTN-FRT)',
 					],
 					english: [
 						'Web Developer',
-						'He/him',
-						'23 years old',
-						"Associate's Degree on University Programming (UTN-FRT)",
+						'24 years old',
+						"Associate's Degree in University Programming (UTN-FRT)",
 					],
 				},
 			},
@@ -213,16 +211,16 @@ const i18n = {
 		software: {
 			section: {
 				currentlyUsing: {
-					english: 'Currently Using',
-					spanish: 'Actualmente Usando',
+					english: 'Currently using',
+					spanish: 'Actualmente usando',
 				},
 				learning: {
 					english: 'Learning',
 					spanish: 'Aprendiendo',
 				},
 				planningOnLearningNext: {
-					english: 'Planning On Learning Next',
-					spanish: 'Siguiente Por Aprender',
+					english: 'Planning on learning next',
+					spanish: 'Siguiente por aprender',
 				},
 			},
 		},
