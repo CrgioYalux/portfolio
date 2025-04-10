@@ -33,11 +33,9 @@ const SoftwareBox: React.FC<{
 		<div
 			className={`w-full grid grid-rows-[3rem_1fr] ${classNames?.container ?? ''}`}
 		>
-			<h3
-				className={`text-xl text-start ${classNames?.title ?? ''}`}
-			>
+			<h4 className={`text-xl text-start ${classNames?.title ?? ''}`}>
 				{title}
-			</h3>
+			</h4>
 			<div
 				className={`w-full -md:w-1/3 grid grid-cols-[repeat(auto-fit,minmax(min(3rem,100%),1fr))] place-items-center gap-2 py-4 rounded-lg ${classNames?.list ?? ''}`}
 			>
@@ -52,7 +50,7 @@ const Software: React.FC = () => {
 
 	return (
 		<div className="w-full flex flex-col gap-4 items-center justify-center md:items-start p-4 md:px-24">
-			<h2 className="text-3xl text-center md:text-start">Software</h2>
+			<h3 className="text-3xl text-center md:text-start">Software</h3>
 			<div className="w-full flex flex-col md:flex-row gap-4">
 				<SoftwareBox
 					classNames={{
@@ -95,7 +93,7 @@ const Software: React.FC = () => {
 				</SoftwareBox>
 				<SoftwareBox
 					classNames={{
-						 list: 'bg-[#A7C7E7]/[0.5]',
+						list: 'bg-[#A7C7E7]/[0.5]',
 					}}
 					title={
 						i18n.section.software.section.planningOnLearningNext[
