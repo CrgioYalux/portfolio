@@ -4,7 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --host",
-		"build": "tsc && vite build",
+		"build": "tsc && vite build && tsx src/scripts/generate-sitemap.ts",
 		"preview": "vite preview",
 		"pretty": "npx prettier . --write",
 		"prepare": "husky"
@@ -12,7 +12,9 @@
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.20.1"
+		"react-helmet-async": "^2.0.5",
+		"react-router-dom": "^6.20.1",
+		"sitemap": "^8.0.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.37",
@@ -24,6 +26,7 @@
 		"postcss": "^8.4.31",
 		"prettier": "^3.4.2",
 		"tailwindcss": "^3.3.5",
+		"tsx": "^4.19.3",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.0"
 	},
