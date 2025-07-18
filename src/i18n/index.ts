@@ -39,12 +39,12 @@ const i18n = {
 				values: {
 					spanish: [
 						'Desarrollo Web',
-						'24 años',
+						'25 años',
 						'Tecnicatura Universitaria en Programación (UTN-FRT)',
 					],
 					english: [
 						'Web Developer',
-						'24 years old',
+						'25 years old',
 						"Associate's Degree in University Programming (UTN-FRT)",
 					],
 				},
@@ -130,6 +130,13 @@ const i18n = {
 						description:
 							'Layout for the app of a bakery that allows customers to create and customize their orders as much as they like.',
 					},
+					{
+						title: 'Text2Emoji',
+						deploy: 'https://emojisecretlang.netlify.app/',
+						repository: 'https://github.com/CrgioYalux/text2emoji',
+						description:
+							'This is one of my first apps. I had this friend. We would send each other "coded" messages using emojis for animals. Each emoji stood for the first letter of the animal’s name, in Spanish. 🐘 = E (elefante), 🐱 = G (gato), and so on. You know something funny? When I finally made a tool for it and showed it to her… we stopped using it. It took me a while to understand that the whole fun was in doing it ourselves. The effort was the point.',
+					},
 				],
 				spanish: [
 					{
@@ -204,6 +211,13 @@ const i18n = {
 						repository: 'https://github.com/CrgioYalux/dolce',
 						description:
 							'Interfaz para la app de una pastelería que permite a sus clientes armar sus pedidos a gusto.',
+					},
+					{
+						title: 'Text2Emoji',
+						deploy: 'https://emojisecretlang.netlify.app/',
+						repository: 'https://github.com/CrgioYalux/text2emoji',
+						description:
+							'Esta es de mis primeras apps. Tenía una amiga. Nos mandábamos mensajes “codificados” usando emojis de animales. Cada emoji representaba la primera letra del nombre del animal, en español. 🐘 = E (elefante), 🐱 = G (gato), y así. ¿Sabés algo curioso? Cuando por fin hice una herramienta para eso y se la mostré… dejamos de usarlo. Me tomó un tiempo entender que la gracia estaba en hacerlo a mano. El esfuerzo era lo que importaba.',
 					},
 				],
 			},
